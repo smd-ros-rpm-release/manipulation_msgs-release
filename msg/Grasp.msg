@@ -1,3 +1,4 @@
+Header header
 
 # The internal posture of the hand for the pre-grasp
 # only positions are used
@@ -26,7 +27,5 @@ float32 desired_approach_distance
 float32 min_approach_distance
 
 # an optional list of obstacles that we have semantic information about
-# and that we expect might move in the course of executing this grasp
-# the grasp planner is expected to make sure they move in an OK way; during
-# execution, grasp executors will not check for collisions against these objects
-GraspableObject[] moved_obstacles
+# and that can be touched/pushed/moved in the course of grasping
+string[] allowed_touch_objects

@@ -19,6 +19,9 @@ float64 grasp_quality
 # Debug flag to indicate that this grasp would be the best in its cluster
 bool cluster_rep
 
+# The approach direction
+geometry_msgs/Vector3 approach_direction
+
 # how far the pre-grasp should ideally be away from the grasp
 float32 desired_approach_distance
 

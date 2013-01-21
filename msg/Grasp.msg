@@ -1,5 +1,8 @@
 Header header
 
+# An id for the grasp
+string id
+
 # The internal posture of the hand for the pre-grasp
 # only positions are used
 sensor_msgs/JointState pre_grasp_posture
@@ -16,9 +19,6 @@ geometry_msgs/Pose grasp_pose
 # measure of how "good" it is.
 float64 grasp_quality
 
-# Debug flag to indicate that this grasp would be the best in its cluster
-bool cluster_rep
-
 # The approach direction
 geometry_msgs/Vector3 approach_direction
 
@@ -28,6 +28,18 @@ float32 desired_approach_distance
 # how much distance between pre-grasp and grasp must actually be feasible 
 # for the grasp not to be rejected
 float32 min_approach_distance
+
+# The direction for gripper translation after the grasp is achieved
+geometry_msgs/Vector3 translation_direction
+
+# the desired translation distance
+float32 desired_translation_distance
+
+# the minimum translation distance
+float32 min_translation_distance
+
+# the maximum contact force to use while grasping (<=0 to disable)
+float32 max_contact_force
 
 # an optional list of obstacles that we have semantic information about
 # and that can be touched/pushed/moved in the course of grasping

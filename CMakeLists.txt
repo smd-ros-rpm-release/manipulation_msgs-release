@@ -11,7 +11,7 @@ set(MSG_DEPS
 find_package(catkin REQUIRED genmsg ${MSG_DEPS})
 
 set(
-  MESSAGE_FILES
+  MSG_FILES
   CartesianGains.msg
   ClusterBoundingBox.msg
   DatabaseModelPose.msg

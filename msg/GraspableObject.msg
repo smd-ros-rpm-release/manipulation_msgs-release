@@ -12,10 +12,10 @@ string reference_frame_id
 
 # potential recognition results from a database of models
 # all poses are relative to the object reference pose
-DatabaseModelPose[] potential_models
+household_objects_database_msgs/DatabaseModelPose[] potential_models
 
 # the point cloud itself
-sensor_msgs/PointCloud2 cluster
+sensor_msgs/PointCloud cluster
 
 # a region of a PointCloud2 of interest
 SceneRegion region

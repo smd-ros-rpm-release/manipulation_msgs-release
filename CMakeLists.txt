@@ -45,5 +45,5 @@ add_action_files(DIRECTORY action FILES ${ACTION_FILES})
 generate_messages(DEPENDENCIES ${MSG_DEPS})
 
 catkin_package(
-  CATKIN_DEPENDS message_generation
+  CATKIN_DEPENDS message_generation ${MSG_DEPS}
   )

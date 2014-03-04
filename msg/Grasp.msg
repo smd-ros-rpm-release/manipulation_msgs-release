@@ -9,8 +9,7 @@ sensor_msgs/JointState pre_grasp_posture
 # positions and efforts are used
 sensor_msgs/JointState grasp_posture
 
-# The position of the end-effector for the grasp relative to a reference frame 
-# (that is always specified elsewhere, not in this message)
+# The position of the end-effector for the grasp 
 geometry_msgs/PoseStamped grasp_pose
 
 # The estimated probability of success for this grasp, or some other
